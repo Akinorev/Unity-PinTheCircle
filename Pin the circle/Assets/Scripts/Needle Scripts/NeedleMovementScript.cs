@@ -16,7 +16,6 @@ public class NeedleMovementScript : MonoBehaviour {
     void Awake ()
     {
         Initialize();
-        FireTheNeedle();
     }
 
     void Initialize()
@@ -57,6 +56,7 @@ public class NeedleMovementScript : MonoBehaviour {
 
             myBody.isKinematic = true;
             gameObject.transform.SetParent(target.transform);
+
         }
     }
 }
