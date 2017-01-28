@@ -43,4 +43,16 @@ public class NeedleMovementScript : MonoBehaviour {
         myBody.isKinematic = false;
         canFireNeedle = true;
     }
+
+    void OnTriggerEnter2D(Collider2D target)
+    {
+        if (touchedTheCircle)
+            return;
+
+        if(target.tag == "Circle")
+        {
+            canFireNeedle = false;
+
+        }
+    }
 }
