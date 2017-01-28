@@ -56,6 +56,7 @@ public class NeedleMovementScript : MonoBehaviour {
             touchedTheCircle = true;
 
             myBody.isKinematic = true;
+            gameObject.transform.SetParent(target.transform);
         }
     }
 }
