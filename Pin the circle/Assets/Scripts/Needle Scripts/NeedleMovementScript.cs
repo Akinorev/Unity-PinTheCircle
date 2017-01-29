@@ -57,6 +57,10 @@ public class NeedleMovementScript : MonoBehaviour {
             myBody.isKinematic = true;
             gameObject.transform.SetParent(target.transform);
 
+            if (ScoreManager.instance != null)
+            {
+                ScoreManager.instance.SetScore();
+            }
         }
     }
 }
